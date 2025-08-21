@@ -1,0 +1,1 @@
+// WishlistButton component
