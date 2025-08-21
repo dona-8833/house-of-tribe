@@ -194,12 +194,12 @@ export default function CheckoutPage() {
                 {cart.map((item, index) => (
                   <div key={index} className="flex justify-between py-3 border-b border-gray-200 text-gray-700">
                     <span className="text-sm">{item.title} x {item.quantity}</span>
-                    <span className="font-medium">₦{(item.price * item.quantity).toLocaleString()}</span>
+                    <span className="font-medium">${(item.price * item.quantity).toLocaleString()}</span>
                   </div>
                 ))}
                 <div className="flex justify-between mt-6 font-bold text-lg">
                   <span>Total</span>
-                  <span>₦{subtotal.toLocaleString()}</span>
+                  <span>${subtotal.toLocaleString()}</span>
                 </div>
               </>
             )}
