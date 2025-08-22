@@ -42,14 +42,14 @@ export default function Navbar() {
         </Link>
     <div className="relative">
       {totalItems > 0 && (
-        <span className="absolute top-3 -right-2 bg-primary text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">
+        <span className="absolute top-1 -right-2 bg-primary text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">
           {totalItems}
         </span>
       )}
 
       <Link
         to="/cart"
-        className="p-2 rounded-full hover:bg-primary/10 text-gray-600 hover:text-primary transition-colors duration-200"
+        className="p-2 rounded-full hover:bg-primary/10 text-gray-600 hover:text-primary transition-colors flex items-center justify-center duration-200"
         aria-label="View shopping cart"
       >
         <ShoppingCart size={20} />
@@ -123,16 +123,16 @@ export default function Navbar() {
               >
                 <Search size={20} />
               </Link>
-    <div className="relative">
+    <div className="relative" onClick={() => setOpen(false)}>
       {totalItems > 0 && (
-        <span className="absolute top-3 -right-2 bg-primary text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">
+        <span className="absolute top-1 -right-2 bg-primary text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">
           {totalItems}
         </span>
       )}
 
       <Link
         to="/cart"
-        className="p-2 rounded-full hover:bg-primary/10 text-gray-600 hover:text-primary transition-colors duration-200"
+        className="p-2 rounded-full flex items-center justify-between hover:bg-primary/10 text-gray-600 hover:text-primary transition-colors duration-200"
         aria-label="View shopping cart"
       >
         <ShoppingCart size={20} />
