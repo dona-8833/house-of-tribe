@@ -98,7 +98,7 @@
              if (error) throw error;
              setUser(data.user);
              setEditFullName(data.user.user_metadata?.full_name || "");
-             setMessage("✅ Sign up successful! Please check your email.");
+             setMessage("✅ Sign up successful! ");
            }
          } catch (error) {
            setMessage(`❌ ${error.message}`);
