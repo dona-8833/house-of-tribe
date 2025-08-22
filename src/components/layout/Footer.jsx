@@ -109,11 +109,11 @@ const Footer = () => {
               <div className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-primary flex-shrink-0" aria-hidden="true" />
                 <a
-                  href="mailto:Thehouseoftribes83@gmaail.com"
+                  href="mailto:info@houseoftribe.com"
                   className="text-white/80 hover:text-primary text-base transition-colors duration-200"
                   aria-label="Email us at Thehouseoftribes83@gmaail.com"
                 >
-                  Thehouseoftribes83@gmaail.com
+                  info@houseoftribe.com
                 </a>
               </div>
             </div>
