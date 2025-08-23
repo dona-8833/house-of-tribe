@@ -12,7 +12,7 @@ const Footer = () => {
           {/* Brand Section */}
           <div className="lg:col-span-1">
             <h3 className="text-2xl font-serif font-bold mb-4">
-              House Of  <span className="text-primary">Tribe</span>
+           The   House Of  <span className="text-primary">Tribe</span>
             </h3>
             <p className="text-white/80 mb-6 text-base leading-relaxed">
               Authentic Nigerian Aso Oke fashion that celebrates heritage while embracing modern style. Each piece tells a story of tradition, craftsmanship, and cultural pride.

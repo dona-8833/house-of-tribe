@@ -14,6 +14,7 @@ import AuthPage from "./pages/Auth";
 import ResetPassword from "./pages/PasswordReset";
 import ProtectedRoute from "./routes/ProtectedRoutes";
 import Checkout from "./pages/Checkout";
+import AboutUs from "./pages/About";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Route path="/cargo" element={<Cargo />} />
         <Route path="/cart" element={<CartPage />} />
         <Route path="/auth" element={<AuthPage />} />
+        <Route path="/about" element={<AboutUs />} />
         <Route path="/search" element={<Search />} />
         <Route path="/reset-password" element={<ResetPassword />} />
 

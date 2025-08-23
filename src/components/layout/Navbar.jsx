@@ -18,9 +18,13 @@ export default function Navbar() {
   return (
     <nav className="bg-white/90 backdrop-blur-md shadow-sm fixed w-full z-10 px-4 md:px-6 lg:px-8 py-3 flex justify-between items-center">
       {/* Logo */}
-      <Link to="/" className="flex items-center">
-        <img src="/logo2.png" className="h-20 md:h-20" alt="Timeless House Of Tribe Logo" />
-      </Link>
+<Link to="/" className="flex items-center justify-center">
+  <img
+    src="/logo2.png"
+    alt="Timeless House Of Tribe Logo"
+    className="h-15 md:h-20 w-auto object-contain"
+  />
+</Link>
 
       {/* Desktop Menu */}
       <div className="hidden md:flex items-center space-x-8 text-gray-800 font-medium">
@@ -29,6 +33,7 @@ export default function Navbar() {
         <Link to="/fila" className="hover:text-primary transition-colors duration-200">Fila</Link>
         <Link to="/bubu" className="hover:text-primary transition-colors duration-200">Bubu Gown</Link>
         <Link to="/cargo" className="hover:text-primary transition-colors duration-200">Cargo Pant</Link>
+        <Link to="/about" className="hover:text-primary transition-colors duration-200">About Us</Link>
       </div>
 
       {/* Desktop Icons */}
@@ -111,6 +116,13 @@ export default function Navbar() {
             className="text-gray-800 font-medium hover:text-primary transition-colors duration-200"
           >
             Cargo Pant
+          </Link>
+          <Link
+            to="/about"
+            onClick={() => setOpen(false)}
+            className="text-gray-800 font-medium hover:text-primary transition-colors duration-200"
+          >
+            About Us
           </Link>
           <div className="h-px w-full bg-gray-200"></div>
           <div className="flex items-center justify-between w-full">
