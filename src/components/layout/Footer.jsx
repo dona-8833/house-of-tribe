@@ -19,14 +19,14 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               {[
-                { Icon: Facebook, label: 'Facebook' },
-                { Icon: Instagram, label: 'Instagram' },
-                { Icon: Twitter, label: 'Twitter' },
-                { Icon: Youtube, label: 'YouTube' },
-              ].map(({ Icon, label }, index) => (
+                { Icon: Facebook, label: 'Facebook' , url:"#"},
+                { Icon: Instagram, label: 'Instagram',url:"https://www.instagram.com/the_house_of_tribe?igsh=YWJ0c3dqZWIxejNk"},
+                { Icon: Twitter, label: 'Twitter' , url:"#" },
+                { Icon: Youtube, label: 'YouTube', url:"#" },
+              ].map(({ Icon, label,url}, index) => (
                 <a
                   key={index}
-                  href="#"
+                  href={url}
                   className="p-2 rounded-full hover:bg-primary/10 text-white hover:text-primary transition-colors duration-200"
                   aria-label={`Follow us on ${label}`}
                 >

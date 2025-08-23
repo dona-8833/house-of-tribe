@@ -183,14 +183,14 @@ function Home() {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 mt-10">
               <HeroCard
                 title="Royal Agbada - Deep Brown"
-                image="/trendagbada.jpg"
+                image="/HEROAGBADA.PNG"
                 category="Agbada"
                 price="120"
               />
               <HeroCard
                 category="Bubu Gown"
                 title="Elegant Bubu Gown - Cream"
-                image="/trendbubu.jpg"
+                image="/HEROBUBU.PNG"
                 price="120"
               />
               <HeroCard
