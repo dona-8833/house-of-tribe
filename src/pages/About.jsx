@@ -28,7 +28,7 @@ const AboutUs = () => {
           weaving stories of resilience, tradition, and modern style into every
           thread.
         </p>
-        <h1 className="text-4xl font-bold text-gray-800 mb-6">
+        <h1 className="text-xs font-light text-gray-800 mb-6">
           About Halimah Badmus, Founder & Creative Director
         </h1>
 

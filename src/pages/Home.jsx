@@ -218,6 +218,8 @@ function Home() {
           </Layout>
         </section>
 
+
+
         {/* Testimonials Section */}
         <section className="bg-[#f1eee7] py-12 px-4 md:px-6 lg:px-8">
           <Layout>
@@ -316,6 +318,45 @@ function Home() {
             </div>
           </Layout>
         </section>
+
+        <section className="py-16 bg-background">
+  <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 px-6">
+    
+    <div className="flex flex-col items-center text-center p-6 bg-background/10 backdrop-blur-sm rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300">
+      <img src="/globe.png" alt="Worldwide Shipping" className="w-12 h-12 mb-4" />
+      <span className="text-lg font-semibold mb-2">Worldwide Shipping</span>
+      <p className="text-sm text-muted-foreground">
+        We deliver stylish native wears to your doorstep, anywhere in the world.
+      </p>
+    </div>
+
+    <div className="flex flex-col items-center text-center p-6 bg-background/10 backdrop-blur-sm rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300">
+      <img src="/quality.png" alt="Best Quality" className="w-12 h-12 mb-4" />
+      <span className="text-lg font-semibold mb-2">Best Quality</span>
+      <p className="text-sm text-muted-foreground">
+        Crafted with premium fabrics for comfort, class, and lasting style.
+      </p>
+    </div>
+
+    <div className="flex flex-col items-center text-center p-6 bg-background/10 backdrop-blur-sm rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300">
+      <img src="/tag.png" alt="Best Offers" className="w-12 h-12 mb-4" />
+      <span className="text-lg font-semibold mb-2">Best Offers</span>
+      <p className="text-sm text-muted-foreground">
+        Get top-quality native wears at unbeatable prices and exclusive deals.
+      </p>
+    </div>
+
+    <div className="flex flex-col items-center text-center p-6 bg-background/10 backdrop-blur-sm rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300">
+      <img src="/lock.png" alt="Secure Payments" className="w-12 h-12 mb-4" />
+      <span className="text-lg font-semibold mb-2">Secure Payments</span>
+      <p className="text-sm text-muted-foreground">
+        Your transactions are safe with our trusted and encrypted payment system.
+      </p>
+    </div>
+
+  </div>
+</section>
+
       </Layout>
     </div>
   );
