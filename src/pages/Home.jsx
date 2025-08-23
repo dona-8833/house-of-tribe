@@ -52,7 +52,7 @@ function Home() {
           </div>
           <div className="relative w-full max-w-md lg:max-w-lg rounded-2xl overflow-hidden flex items-start justify-start shadow-xl">
             <img
-              src="/hero1.png"
+              src="/herofinest.PNG"
               alt="Traditional Nigerian fashion"
               className="w-full h-150 object-cover flex items-start justify-start transition-transform  duration-500 ease-in-out hover:scale-105"
             />
