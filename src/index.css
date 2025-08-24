@@ -7,17 +7,50 @@
     
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-.bg-hero {
-  background-image: url('/hero1.png');
+
+.bghero {
+  position: relative;
+  background-image: url('/bghero2.jpeg');
   background-size: cover;
   background-position: center;
-    background-repeat: no-repeat;
+  background-repeat: no-repeat;
+  overflow: hidden;
 }
 
-@theme {
-  --color-accent: #48382e;
-  --color-accent2: #42312e; 
-  --color-accent3: #1b356a;
-  --color-primary: #e6c360;
-  --color-primary2: #f0e6b8;
+.bghero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: inherit;
+  background-size: inherit;
+  background-position: inherit;
+  background-repeat: inherit;
+  filter: blur(2px);
+  transform: scale(1.1);
+  z-index: 0;
 }
+
+.bghero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5); /* dark overlay */
+  z-index: 1;
+}
+
+.bghero > * {
+  position: relative;
+  z-index: 2; /* keep content above overlay */
+}
+
+
+
+@theme {
+  --color-primary: #008ad6;   /* Base Blue */
+  --color-primary2: #0069a3;  /* Darker Blue variant */
+
+  --color-accent: #4dbaf0;    /* Light Blue accent */
+  --color-accent2: #00aaff;   /* Vibrant Blue accent */
+  --color-accent3: #cce7f7;   /* Soft Muted Blue (bg use) */
+}
+

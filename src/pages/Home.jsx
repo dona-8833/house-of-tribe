@@ -7,57 +7,78 @@ import HeroCard from "../components/product/HeroCard";
 function Home() {
   return (
     <div className="bg-white min-h-screen">
+<main className="bghero relative flex items-center min-h-screen">
+  
+    <div className="flex w-full justify-center px-4 lg:justify-start lg:px-30">
+      
+      
+      {/* Content */}
+      <div className="flex max-w-2xl flex-col items-center space-y-6 text-center 
+                      lg:items-start lg:text-left lg:ml-0">
+        
+        <h1 className="text-4xl font-bold text-white drop-shadow-lg 
+                       md:text-5xl lg:text-6xl">
+          Timeless House Of <br /> Tribe
+        </h1>
+
+        <p className="max-w-xl text-lg leading-relaxed text-gray-200 drop-shadow-md 
+                      md:text-xl">
+          Discover authentic Nigerian craftsmanship with our curated collection of
+          traditional Agbada, elegant Fila caps, flowing Bubu gowns, and premium
+          fabrics that blend heritage with contemporary style.
+        </p>
+
+        {/* Stats */}
+        <div className="flex flex-col items-center font-semibold text-white 
+                        md:flex-row md:gap-6 lg:items-start lg:justify-start">
+          
+          <div className="flex flex-col items-center lg:items-start">
+            <span className="flex items-center gap-2 text-lg">
+              <Star className="h-5 w-5 text-yellow-400" aria-hidden="true" />
+              4.9
+            </span>
+            <span className="text-sm text-gray-300">Customer Rating</span>
+          </div>
+          
+          <div className="flex flex-col items-center lg:items-start">
+            <span className="text-lg">500+</span>
+            <span className="text-sm text-gray-300">Happy Customers</span>
+          </div>
+          
+          <div className="flex flex-col items-center lg:items-start">
+            <span className="text-lg">100%</span>
+            <span className="text-sm text-gray-300">Authentic Fabric</span>
+          </div>
+        </div>
+
+        {/* Buttons */}
+        <div className="flex flex-col gap-4 pt-6 
+                        md:flex-row md:justify-center lg:justify-start">
+          <Link
+            to="/search"
+            className="rounded-lg bg-primary px-6 py-3 font-medium text-white shadow-md transition duration-300 hover:bg-primary/90"
+          >
+            Shop Collection
+          </Link>
+          <button
+            className="rounded-lg bg-gradient-to-r from-primary2 to-primary px-6 py-3 font-medium text-white shadow-md transition duration-300 hover:from-primary2/90 hover:to-primary/90"
+          >
+            Custom Orders
+          </button>
+        </div>
+
+      </div>
+        
+    </div>
+  
+</main>
+
+
+
+
+
       <Layout>
         {/* Hero Section */}
-        <main className="flex flex-col md:flex-row justify-between items-center gap-8 py-12 px-4 md:px-6 lg:px-8">
-          <div className="flex flex-col items-center md:items-start space-y-6 max-w-lg">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 tracking-tight">
-              Timeless House Of<br /> Tribe
-            </h1>
-            <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
-              Discover authentic Nigerian craftsmanship with our curated collection of traditional Agbada, elegant Fila caps, flowing Bubu gowns, and premium fabrics that blend heritage with contemporary style.
-            </p>
-            <div className="flex flex-col md:flex-row gap-4 items-center justify-center md:justify-start text-primary font-semibold">
-              <div className="flex flex-col items-center">
-                <span className="flex items-center gap-2 text-lg">
-                  <Star className="h-5 w-5 text-yellow-400 fill-current" aria-hidden="true" />
-                  4.9
-                </span>
-                Customer Rating
-              </div>
-              <div className="flex flex-col items-center">
-                <span className="text-lg">500+</span>
-                Happy Customers
-              </div>
-              <div className="flex flex-col items-center">
-                <span className="text-lg">100%</span>
-                Authentic Fabric
-              </div>
-            </div>
-            <div className="flex flex-col md:flex-row gap-4 justify-center md:justify-start pt-6">
-              <Link
-                to="/search"
-                className="bg-primary hover:bg-primary/90 text-white px-6 py-3 rounded-lg font-medium transition-colors duration-300"
-                aria-label="Shop the collection"
-              >
-                Shop Collection
-              </Link>
-              <button
-                className="bg-gradient-to-r from-primary2 to-primary hover:from-primary2/90 hover:to-primary/90 text-white px-6 py-3 rounded-lg font-medium transition-colors duration-300"
-                aria-label="Place a custom order"
-              >
-                Custom Orders
-              </button>
-            </div>
-          </div>
-          <div className="relative w-full max-w-md lg:max-w-lg rounded-2xl overflow-hidden flex items-start justify-start shadow-xl">
-            <img
-              src="/herofinest.PNG"
-              alt="Traditional Nigerian fashion"
-              className="w-full h-150 object-cover flex items-start justify-start transition-transform  duration-500 ease-in-out hover:scale-105"
-            />
-          </div>
-        </main>
 
         {/* Collection Section */}
         <section className="py-12 px-4 md:px-6 lg:px-8 text-center space-y-6">
@@ -80,7 +101,7 @@ function Home() {
                   <p className="text-white/90 mb-4 text-base md:text-lg">Elegant flowing robes for special occasions</p>
                   <Link
                     to="/agbada"
-                    className="bg-[#e6c360] hover:bg-[#d4b150] text-black px-6 py-3 rounded-lg font-medium transition-colors duration-300"
+                    className="bg-accent text-black px-6 py-3 rounded-lg font-medium transition-colors duration-300"
                     aria-label="Shop Traditional Agbada"
                   >
                     Shop Now
@@ -101,7 +122,7 @@ function Home() {
                   <p className="text-white/90 mb-4 text-base">Authentic hand-woven traditional caps</p>
                   <Link
                     to="/fila"
-                    className="bg-[#e6c360] hover:bg-[#d4b150] text-black px-6 py-3 rounded-lg font-medium transition-colors duration-300"
+                    className="bg-accent text-black px-6 py-3 rounded-lg font-medium transition-colors duration-300"
                     aria-label="Shop Fila Caps"
                   >
                     Shop Now
@@ -120,7 +141,7 @@ function Home() {
                   <p className="text-white/90 mb-4 text-base">Graceful women's traditional wear</p>
                   <Link
                     to="/bubu"
-                    className="bg-[#e6c360] hover:bg-[#d4b150] text-black px-6 py-3 rounded-lg font-medium transition-colors duration-300"
+                    className="bg-accent text-black px-6 py-3 rounded-lg font-medium transition-colors duration-300"
                     aria-label="Shop Bubu Gowns"
                   >
                     Shop Now
@@ -142,7 +163,7 @@ function Home() {
                 <p className="text-white/90 mb-4 text-base">Contemporary streetwear with traditional fabric</p>
                 <Link
                   to="/cargo"
-                  className="bg-[#e6c360] hover:bg-[#d4b150] text-black px-6 py-3 rounded-lg font-medium transition-colors duration-300"
+                  className="bg-accent text-black px-6 py-3 rounded-lg font-medium transition-colors duration-300"
                   aria-label="Explore Modern Cargo"
                 >
                   Explore
@@ -160,7 +181,7 @@ function Home() {
                 <h3 className="text-xl md:text-2xl font-serif font-bold mb-2">Premium Fabrics</h3>
                 <p className="text-white/90 mb-4 text-base">Authentic Aso Oke textiles by the yard</p>
                 <button
-                  className="bg-[#e6c360] hover:bg-[#d4b150] text-black px-6 py-3 rounded-lg font-medium transition-colors duration-300"
+                  className="bg-accent text-black px-6 py-3 rounded-lg font-medium transition-colors duration-300"
                   aria-label="Explore Premium Fabrics"
                 >
                   Explore
