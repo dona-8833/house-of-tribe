@@ -10,31 +10,35 @@ const Footer = () => {
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Brand Section */}
-          <div className="lg:col-span-1">
-            <h3 className="text-2xl font-serif font-bold mb-4">
-           The   House Of  <span className="text-primary">Tribe</span>
-            </h3>
-            <p className="text-white/80 mb-6 text-base leading-relaxed">
-              Authentic Nigerian Aso Oke fashion that celebrates heritage while embracing modern style. Each piece tells a story of tradition, craftsmanship, and cultural pride.
-            </p>
-            <div className="flex space-x-4">
-              {[
-                { Icon: Facebook, label: 'Facebook' , url:"#"},
-                { Icon: Instagram, label: 'Instagram',url:"https://www.instagram.com/the_house_of_tribe?igsh=YWJ0c3dqZWIxejNk"},
-                { Icon: Twitter, label: 'Twitter' , url:"#" },
-                { Icon: Youtube, label: 'YouTube', url:"#" },
-              ].map(({ Icon, label,url}, index) => (
-                <a
-                  key={index}
-                  href={url}
-                  className="p-2 rounded-full hover:bg-primary/10 text-white hover:text-primary transition-colors duration-200"
-                  aria-label={`Follow us on ${label}`}
-                >
-                  <Icon className="h-5 w-5" />
-                </a>
-              ))}
-            </div>
-          </div>
+<div className="lg:col-span-1 text-center lg:text-left">
+  <img src="/whitelogo.png" alt="House of Tribe logo" className="mx-auto lg:mx-0 w-34 h-auto mb-4" />
+  <h3 className="text-2xl font-serif font-bold mb-4">
+    The House Of <span className="text-primary">Tribe</span>
+  </h3>
+  <p className="text-white/80 mb-6 text-base leading-relaxed">
+    Authentic Nigerian Aso Oke fashion that celebrates heritage while embracing modern style. Each piece tells a story of tradition, craftsmanship, and cultural pride.
+  </p>
+  <div className="flex justify-center lg:justify-start space-x-4">
+    {[
+      { Icon: Facebook, label: 'Facebook', url: "#" },
+      { Icon: Instagram, label: 'Instagram', url: "https://www.instagram.com/the_house_of_tribe?igsh=YWJ0c3dqZWIxejNk" },
+      { Icon: Twitter, label: 'Twitter', url: "#" },
+      { Icon: Youtube, label: 'YouTube', url: "#" },
+    ].map(({ Icon, label, url }, index) => (
+      <a
+        key={index}
+        href={url}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="p-2 rounded-full hover:bg-primary/10 text-white hover:text-primary transition-colors duration-200"
+        aria-label={`Follow us on ${label}`}
+      >
+        <Icon className="h-5 w-5" />
+      </a>
+    ))}
+  </div>
+</div>
+
 
           {/* Quick Links */}
           <div>

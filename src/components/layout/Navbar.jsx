@@ -16,15 +16,15 @@ export default function Navbar() {
   const totalItems = cart.length
 
   return (
-    <nav className="bg-white/90 backdrop-blur-md shadow-sm fixed w-full z-10 px-4 md:px-6 lg:px-8 py-3 flex justify-between items-center">
+    <nav className="bg-white/90 backdrop-blur-md shadow-sm fixed w-full z-10 px-4 md:px-6 lg:px-8 py-7 flex justify-between items-center">
       {/* Logo */}
-<Link to="/" className="flex items-center justify-center">
+{/* <Link to="/" className="flex items-center justify-center">
   <img
-    src="/logo2.png"
+    src="/whitelogo.png"
     alt="Timeless House Of Tribe Logo"
     className="h-15 md:h-20 w-auto object-contain"
   />
-</Link>
+</Link> */}
 
       {/* Desktop Menu */}
       <div className="hidden md:flex items-center space-x-8 text-gray-800 font-medium">
