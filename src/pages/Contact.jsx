@@ -55,6 +55,17 @@ const Contact = () => {
               Visit Our Office
             </h4>
             <p className="text-gray-600 mt-3 leading-relaxed">
+2-4 Southcoates Lane
+HU9 3AB
+<br />
+United Kingdom            </p>
+          </div>
+          <div className="bg-white p-6 rounded-2xl shadow-lg transition-all duration-300 hover:shadow-xl">
+            <h4 className="text-xl font-semibold text-gray-800 flex items-center gap-2">
+              <MapPin className="w-6 h-6 text-blue-600" />
+              Visit Our Office
+            </h4>
+            <p className="text-gray-600 mt-3 leading-relaxed">
               No 14, Harmony Estate, Soka, Ibadan. <br /> Oyo State
             </p>
           </div>
@@ -70,7 +81,13 @@ const Contact = () => {
               <Phone className="w-6 h-6 text-blue-600" />
               General Inquiries
             </h4>
-            <p className="text-gray-600 mt-3">+1 234 567 890</p>
+            <p className="text-gray-600 mt-3">+234816448794</p>
+          </div>
+          <div className="bg-white p-6 rounded-2xl shadow-lg transition-all duration-300 hover:shadow-xl">
+            <h4 className="text-xl font-semibold text-gray-800 flex items-center gap-2">
+              Return policy
+            </h4>
+            <p className="text-gray-600 mt-3">Unworn items can be returned within 7 days of delivery</p>
           </div>
         </div>
       </div>
