@@ -4,7 +4,7 @@ import Layout from "../components/layout/Layout";
 
 const AboutUs = () => {
   return (
-    <Layout>
+    
 
 
     <div className="min-h-screen  flex items-center justify-center p-6">
@@ -28,8 +28,8 @@ const AboutUs = () => {
           weaving stories of resilience, tradition, and modern style into every
           thread.
         </p>
-        <h1 className="text-base font-bold text-gray-800 mb-6">
-          About Halimah Badmus, Founder & Creative Director
+        <h1 className="text-xl font-bold text-center text-gray-800 mb-6">
+          About Halimah Badmus, Founder &  <br />Creative Director
         </h1>
 
         <p className="text-gray-700 mb-4">
@@ -63,7 +63,7 @@ const AboutUs = () => {
         </p>
       </div>
     </div>
-        </Layout>
+
   );
 };
 

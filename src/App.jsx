@@ -15,6 +15,7 @@ import ResetPassword from "./pages/PasswordReset";
 import ProtectedRoute from "./routes/ProtectedRoutes";
 import Checkout from "./pages/Checkout";
 import AboutUs from "./pages/About";
+import Contact from "./pages/Contact";
 
 function App() {
   return (
@@ -31,6 +32,8 @@ function App() {
         <Route path="/auth" element={<AuthPage />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/search" element={<Search />} />
+        <Route path="/contact" element={<Contact />} />
+
         <Route path="/reset-password" element={<ResetPassword />} />
 
         {/* ✅ Protect checkout with Supabase session */}

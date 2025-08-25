@@ -16,7 +16,7 @@ export default function Navbar() {
   const totalItems = cart.length
 
   return (
-    <nav className="bg-white/90 backdrop-blur-md shadow-sm fixed w-full z-10 px-4 md:px-6 lg:px-8 py-7 flex justify-between items-center">
+    <nav className="bg-white/90 backdrop-blur-md shadow-sm fixed w-full z-10 px-4 md:px-8 lg:px-8 md:py-5 py-10 flex justify-between items-center">
       {/* Logo */}
 {/* <Link to="/" className="flex items-center justify-center">
   <img
@@ -34,6 +34,7 @@ export default function Navbar() {
         <Link to="/bubu" className="hover:text-primary transition-colors duration-200">Bubu Gown</Link>
         <Link to="/cargo" className="hover:text-primary transition-colors duration-200">Cargo Pant</Link>
         <Link to="/about" className="hover:text-primary transition-colors duration-200">About Us</Link>
+        <Link to="/contact" className="hover:text-primary transition-colors duration-200">Contact Us</Link>
       </div>
 
       {/* Desktop Icons */}
@@ -71,7 +72,7 @@ export default function Navbar() {
 
       {/* Mobile Menu Button */}
       <button
-        className="md:hidden p-2 rounded-lg bg-primary text-white hover:bg-primary/90 transition-colors duration-200"
+        className="md:hidden p-2 rounded-lg bg-primary absolute right-5 text-white hover:bg-primary/90 transition-colors duration-200"
         onClick={() => setOpen(!open)}
         aria-label={open ? "Close menu" : "Open menu"}
         aria-expanded={open}
@@ -123,6 +124,13 @@ export default function Navbar() {
             className="text-gray-800 font-medium hover:text-primary transition-colors duration-200"
           >
             About Us
+          </Link>
+          <Link
+            to="/contact"
+            onClick={() => setOpen(false)}
+            className="text-gray-800 font-medium hover:text-primary transition-colors duration-200"
+          >
+            Contact Us
           </Link>
           <div className="h-px w-full bg-gray-200"></div>
           <div className="flex items-center justify-between w-full">

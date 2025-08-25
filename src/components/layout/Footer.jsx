@@ -120,6 +120,14 @@ const Footer = () => {
                   info@houseoftribe.com
                 </a>
               </div>
+              <div className="flex flex-col  gap-3">
+                  <p>Subscribe</p>
+                  <div className='flex'>
+                    <input type="text" placeholder='Enter your email' className='rounded-l-md p-2  text-black otuline border border-white  '/>
+                    <button className='bg-primary text-white rounded-r-md px-4 py-2 hover:bg-primary/90 transition-colors duration-200'>Subscribe</button>
+                  </div>
+
+              </div>
             </div>
           </div>
         </div>
