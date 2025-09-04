@@ -7,7 +7,7 @@ import { PayPalScriptProvider } from '@paypal/react-paypal-js';
 createRoot(document.getElementById('root')).render(
 <PayPalScriptProvider
   options={{
-    "client-id": "AfL7hjB2ajPed_M0l7xwOVRFaPp2yg3-Bb1KhRMIQUozh3kRxlF3RCsynIoJ4jgIv870E53iC2kal19_",
+    "client-id": import.meta.env.VITE_PAYPAL_CLIENT_ID,
     currency: "USD",
   }}
 >
