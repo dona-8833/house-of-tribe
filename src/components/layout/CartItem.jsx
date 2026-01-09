@@ -17,7 +17,7 @@ export default function CartItem({ item }) {
       <div className="flex flex-col flex-1 px-4">
         <h3 className="font-semibold text-gray-800">{item.title}</h3>
         <p className="text-gray-500 text-sm">Size: {item.size}</p>
-        <p className="font-bold text-accent2">${item.price}</p>
+        <p className="font-bold text-accent2">£{item.price}</p>
       </div>
 
       {/* Quantity Controls */}

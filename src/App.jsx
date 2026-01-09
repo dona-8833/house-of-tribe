@@ -16,6 +16,7 @@ import ProtectedRoute from "./routes/ProtectedRoutes";
 import Checkout from "./pages/Checkout";
 import AboutUs from "./pages/About";
 import Contact from "./pages/Contact";
+import Jacket from "./pages/Jacket";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/agbada" element={<Agbada />} />
+        <Route path="/jacket" element={<Jacket />} />
         <Route path="/fila" element={<Fila />} />
         <Route path="/bubu" element={<Bubu />} />
         <Route path="/cargo" element={<Cargo />} />

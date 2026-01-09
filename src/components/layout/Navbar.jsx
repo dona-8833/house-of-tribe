@@ -30,8 +30,9 @@ export default function Navbar() {
       <div className="hidden md:flex items-center space-x-8 text-gray-800 font-medium">
         <Link to="/" className="hover:text-primary transition-colors duration-200">Home</Link>
         <Link to="/agbada" className="hover:text-primary transition-colors duration-200">Agbada</Link>
+        <Link to="/jacket" className="hover:text-primary transition-colors duration-200">Jacket</Link>
         <Link to="/fila" className="hover:text-primary transition-colors duration-200">Fila</Link>
-        <Link to="/bubu" className="hover:text-primary transition-colors duration-200">Bubu Gown</Link>
+        {/* <Link to="/bubu" className="hover:text-primary transition-colors duration-200">Bubu Gown</Link> */}
         <Link to="/cargo" className="hover:text-primary transition-colors duration-200">Cargo Pant</Link>
         <Link to="/about" className="hover:text-primary transition-colors duration-200">About Us</Link>
         <Link to="/contact" className="hover:text-primary transition-colors duration-200">Contact Us</Link>

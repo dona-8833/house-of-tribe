@@ -26,7 +26,7 @@ function Search() {
       setError(null);
 
       try {
-        let query = supabase.from("products").select("*");
+        let query = supabase.from("products").select("*").neq("category","bubu");
 
         // Category filter
         if (category !== "all") {
@@ -131,7 +131,8 @@ function Search() {
                   <option value="all">All Categories</option>
                   <option value="agbada">Agbada</option>
                   <option value="fila">Fila</option>
-                  <option value="bubu">Bubu Gown</option>
+                  {/* <option value="bubu">Bubu Gown</option> */}
+                  <option value="jacket">Jacket</option>
                   <option value="cargo">Cargo Pant</option>
                 </select>
                 <ChevronDown

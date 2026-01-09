@@ -90,7 +90,7 @@ export default function ProductCard({
             <span className="text-xs font-medium text-gray-600 bg-gray-100 px-2 py-1 rounded-full">
               {category}
             </span>
-            <span className="text-lg font-bold text-gray-900">${price.toFixed(2)}</span>
+            <span className="text-lg font-bold text-gray-900">£{price.toFixed(2)}</span>
           </div>
 
           <h3 className="text-base font-semibold text-gray-900 line-clamp-2">
