@@ -105,12 +105,19 @@ export default function Navbar() {
           >
             Fila
           </Link>
-          <Link
+          {/* <Link
             to="/bubu"
             onClick={() => setOpen(false)}
             className="text-gray-800 font-medium hover:text-primary transition-colors duration-200"
           >
             Bubu Gown
+          </Link> */}
+          <Link
+            to="/jacket"
+            onClick={() => setOpen(false)}
+            className="text-gray-800 font-medium hover:text-primary transition-colors duration-200"
+          >
+            Jacket
           </Link>
           <Link
             to="/cargo"
