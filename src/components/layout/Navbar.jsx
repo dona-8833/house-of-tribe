@@ -34,7 +34,7 @@ export default function Navbar() {
         <Link to="/fila" className="hover:text-primary transition-colors duration-200">Fila</Link>
         {/* <Link to="/bubu" className="hover:text-primary transition-colors duration-200">Bubu Gown</Link> */}
         <Link to="/cargo" className="hover:text-primary transition-colors duration-200">Cargo Pant</Link>
-        <Link to="/about" className="hover:text-primary transition-colors duration-200">About Us</Link>
+        {/* <Link to="/about" className="hover:text-primary transition-colors duration-200">About Us</Link> */}
         <Link to="/contact" className="hover:text-primary transition-colors duration-200">Contact Us</Link>
       </div>
 
@@ -126,13 +126,13 @@ export default function Navbar() {
           >
             Cargo Pant
           </Link>
-          <Link
+          {/* <Link
             to="/about"
             onClick={() => setOpen(false)}
             className="text-gray-800 font-medium hover:text-primary transition-colors duration-200"
           >
             About Us
-          </Link>
+          </Link> */}
           <Link
             to="/contact"
             onClick={() => setOpen(false)}
