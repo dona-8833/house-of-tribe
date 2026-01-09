@@ -28,7 +28,7 @@ const AboutUs = () => {
           weaving stories of resilience, tradition, and modern style into every
           thread.
         </p>
-        <h1 className="text-xl font-bold text-center text-gray-800 mb-6">
+        {/* <h1 className="text-xl font-bold text-center text-gray-800 mb-6">
           About Halimah Badmus, Founder &  <br />Creative Director
         </h1>
 
@@ -60,7 +60,7 @@ const AboutUs = () => {
 ✨ THE HOUSE OF TRIBE ✨
 
 ✨Where tradition finds its voice✨
-        </p>
+        </p> */}
       </div>
     </div>
 

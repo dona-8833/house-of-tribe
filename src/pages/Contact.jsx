@@ -81,7 +81,7 @@ United Kingdom            </p>
               <Phone className="w-6 h-6 text-blue-600" />
               General Inquiries
             </h4>
-            <p className="text-gray-600 mt-3">+234816448794</p>
+            <p className="text-gray-600 mt-3">+447407676575</p>
           </div>
           <div className="bg-white p-6 rounded-2xl shadow-lg transition-all duration-300 hover:shadow-xl">
             <h4 className="text-xl font-semibold text-gray-800 flex items-center gap-2">
